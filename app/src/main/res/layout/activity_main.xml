@@ -30,11 +30,22 @@
 
     <Button
         android:id="@+id/changeColourButton"
-        android:layout_width="132dp"
+        android:layout_width="129dp"
         android:layout_height="52dp"
         android:text="Change Colour"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changeTextButton" />
+
+    <Button
+        android:id="@+id/changeBackgroundButton"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:text="Change Background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeColourButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

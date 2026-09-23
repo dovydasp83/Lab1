@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TextView displayText = findViewById(R.id.displayText);
         Button changeTextButton = findViewById(R.id.changeTextButton);
         Button changeColourButton = findViewById(R.id.changeColourButton);
+        Button changeBackgroundButton = findViewById(R.id.changeBackgroundButton);
 
         changeTextButton.setOnClickListener(v -> {
             displayText.setText("Changed Text");
@@ -29,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
         changeColourButton.setOnClickListener(v -> {
             displayText.setTextColor(Color.BLUE);
+        });
+
+        changeBackgroundButton.setOnClickListener( v -> {
+            findViewById(R.id.main).setBackgroundColor(Color.YELLOW);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
