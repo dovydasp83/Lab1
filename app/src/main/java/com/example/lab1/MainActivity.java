@@ -1,5 +1,6 @@
 package com.example.lab1;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
         TextView displayText = findViewById(R.id.displayText);
         Button changeTextButton = findViewById(R.id.changeTextButton);
+        Button changeColourButton = findViewById(R.id.changeColourButton);
 
         changeTextButton.setOnClickListener(v -> {
             displayText.setText("Changed Text");
+        });
+
+        changeColourButton.setOnClickListener(v -> {
+            displayText.setTextColor(Color.BLUE);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
